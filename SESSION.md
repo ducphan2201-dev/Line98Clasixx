@@ -89,3 +89,6 @@
 
 - Task: Da co repo GitHub dich `ducphan2201-dev/Line98Clasixx`.
 - State: Da doi `origin` sang `https://github.com/ducphan2201-dev/Line98Clasixx.git` va push thanh cong nhánh `main` len GitHub.
+
+- Task: Checkpoint du an Line 98.
+- State: Da giu ban game Classic/Arcade, da co `index.html` redirect cho Pages, va dang them workflow GitHub Pages de deploy ro rang hon; can bo sung cau hinh Pages sang `GitHub Actions` trong repo neu muon dung workflow moi.
