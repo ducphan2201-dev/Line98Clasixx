@@ -377,8 +377,10 @@
     @media (max-width: 700px) {
       body { padding: 0; }
       #app {
-        width: 100vw;
-        height: 100vh;
+        width: 100dvw;
+        height: 100dvh;
+        max-width: none;
+        max-height: none;
         border-width: 0;
         grid-template-rows: 72px 1fr;
       }
@@ -422,7 +424,8 @@
         flex-direction: column;
         align-items: stretch;
         justify-content: flex-start;
-        padding: 4px 6px 8px;
+        padding: 4px 6px 10px;
+        overflow: hidden;
       }
 
       #leftDock {
@@ -924,8 +927,9 @@
         const isMobile = window.matchMedia("(max-width: 700px)").matches;
         const dockHeight = isMobile ? leftDock.getBoundingClientRect().height : 0;
         const usableHeight = Math.max(0, height - dockHeight - (isMobile ? 12 : 0));
-        const layoutHeight = isMobile ? usableHeight : height;
-        const size = Math.floor(Math.min(width - 8, layoutHeight - 8));
+        const size = isMobile
+          ? Math.floor(width - 8)
+          : Math.floor(Math.min(width - 8, height - 8));
         const cellSize = Math.max(28, Math.floor(size / GRID));
         const boardSize = cellSize * GRID;
         const offsetX = Math.floor((width - boardSize) / 2);
@@ -938,9 +942,9 @@
         state.boardSize = boardSize;
 
         canvas.width = Math.max(1, Math.floor(width * state.dpr));
-        canvas.height = Math.max(1, Math.floor(usableHeight * state.dpr));
+        canvas.height = Math.max(1, Math.floor((isMobile ? boardSize + 8 : usableHeight) * state.dpr));
         canvas.style.width = `${width}px`;
-        canvas.style.height = `${usableHeight}px`;
+        canvas.style.height = `${isMobile ? boardSize + 8 : usableHeight}px`;
         ctx.setTransform(state.dpr, 0, 0, state.dpr, 0, 0);
       }
 

@@ -75,6 +75,9 @@
 
 - Task: Bố cục lại bảng menu mobile cho đẹp.
 - State: Da doi mobile menu sang luoi 2 cot, cho nut Pause chay full width de khong con khoang trong xau, va giu status dong bo ben duoi menu.
+
+- Task: Co dinh chieu ngang giao dien mobile theo kich co man hinh dien thoai.
+- State: Da cho app dung `100dvw/100dvh` tren mobile va cho board lay chieu ngang lam chuan chinh, de giao dien khop be ngang man hinh va menu van nam ben duoi.
 - Task: Tang toc do di chuyen cua bi len mot chut.
 - State: Da giam nhe `moveMs` cua Classic va Arcade de animation di chuyen nhanh hon, giu cam giac nhanh tay nhung khong doi luat choi.
 
