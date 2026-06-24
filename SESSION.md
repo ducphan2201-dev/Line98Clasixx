@@ -77,3 +77,9 @@
 - State: Da doi mobile menu sang luoi 2 cot, cho nut Pause chay full width de khong con khoang trong xau, va giu status dong bo ben duoi menu.
 - Task: Tang toc do di chuyen cua bi len mot chut.
 - State: Da giam nhe `moveMs` cua Classic va Arcade de animation di chuyen nhanh hon, giu cam giac nhanh tay nhung khong doi luat choi.
+
+- Task: Deploy Line 98 len GitHub voi repo moi.
+- State: Da khoi tao git repo local trong FORFUN, tao commit dau tien va gan remote `origin` toi `https://github.com/ducphan2201-dev/line98-classic.git`, nhung chua the push vi may chua co thong tin xac thuc GitHub de tao repo moi.
+
+- Task: Da co repo GitHub dich `ducphan2201-dev/Line98Clasixx`.
+- State: Da doi `origin` sang `https://github.com/ducphan2201-dev/Line98Clasixx.git` va push thanh cong nhánh `main` len GitHub.
