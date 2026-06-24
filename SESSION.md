@@ -78,6 +78,9 @@
 
 - Task: Co dinh chieu ngang giao dien mobile theo kich co man hinh dien thoai.
 - State: Da cho app dung `100dvw/100dvh` tren mobile va cho board lay chieu ngang lam chuan chinh, de giao dien khop be ngang man hinh va menu van nam ben duoi.
+
+- Task: Chuan bi GitHub Pages cho Line 98.
+- State: Da them `index.html` chuyen huong sang `Line98Classic.html` de Pages mo game dung ngay tu root repo.
 - Task: Tang toc do di chuyen cua bi len mot chut.
 - State: Da giam nhe `moveMs` cua Classic va Arcade de animation di chuyen nhanh hon, giu cam giac nhanh tay nhung khong doi luat choi.
 
